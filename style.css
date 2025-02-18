@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Purple+Purse&family=Roboto+Slab&display=swap');
+
+
+* {
+    font-family: "Purple Purse", serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    animation: animation-delay;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.conteiner {
+    margin: 0 7rem;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul :hover {
+    color: rgb(0, 0, 0);
+}
+
+.home {
+    height: 100vh;
+    background-image: linear-gradient(red, rgb(53, 0, 0));
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: animation1 1s ease-out;
+}
+
+nav .logo {
+    width: 90px;
+    animation: animation1 1s ease-out;
+
+}
+
+nav ul {
+    display: flex;
+    padding: 25px 0;
+    align-items: center;
+}
+
+nav ul a {
+    color: white;
+    padding: 20px;
+}
+
+.h1 {
+    position: relative;
+    right: 190px;
+}
+
+.home .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+.home .content img {
+    width: 330px;
+    animation: animation1 1s ease-out;
+}
+
+.home .content .content-text h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    animation: animation1 1s ease-out;
+}
+
+.home .content .content-text h1 span {
+    font-size: 60px;
+    text-transform: uppercase;
+    animation: animation1 1s ease-out;
+}
+
+.home .content .content-text p {
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    width: 80%;
+    animation: animation1 1s ease-out;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+}
+
+.socila {
+    margin-left: 3rem;
+    transition: all 0.3s ease;
+    animation: animation1 1s ease-out;
+    position: relative;
+    left: 150px;
+    bottom: 30px;
+}
+
+.socila :hover {
+    transform: scale(1.1) perspective(2500px) rotate(5deg);
+}
+
+.socila i {
+    color: white;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*tablet*/
+@media (max-width:900px) {
+    .conteiner {
+        margin: 0 1rem;
+    }
+
+    nav ul a {
+        padding: 10px;
+    }
+
+    .home .content {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0 0;
+    }
+
+    .home .content .content-text p {
+        width: 100%;
+    }
+
+    .home .content .content-text {
+        margin-bottom: 2rem;
+    }
+}
